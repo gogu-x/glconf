@@ -1,0 +1,12 @@
+C_INT_id	C_ARR_show_icon_type	C_ARR_show_item_id	C_ARR_show_item_num
+s	s	s	s
+int	int[]	int[]	string[]
+CfgID	ShowIconType	ShowItemId	ShowItemNum
+id			
+			
+编号	显示图标类型	显示道具编号	显示道具数量
+
+
+2001	[2,1]	[21113001,21110018]	["500K"," "]
+2002	[2,1]	[21113001,21110019]	["2.5M"," "]
+2003	[2,1]	[21113001,21110019]	["5M","x3"]
