@@ -1,0 +1,9 @@
+C_INT_id	C_OBJ_modifier
+s	s
+int	BattleAttributeModifierCfg
+CfgID	Modifier
+id	modifier
+	BattleAttributeModifierCfg
+装备配置 ID	属性修正（JSON 对象：max_hp、attack、defense、speed）
+
+

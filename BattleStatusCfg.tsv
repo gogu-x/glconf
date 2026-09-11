@@ -1,0 +1,9 @@
+C_INT_id	C_INT_kind	C_INT_duration_turns	C_LONG_potency	C_OBJ_modifier
+s	s	s	s	s
+int	int	int	long	BattleAttributeModifierCfg
+CfgID	Kind	DurationTurns	Potency	Modifier
+id	kind	duration_turns	potency	modifier
+				BattleAttributeModifierCfg
+状态配置 ID	状态类型	持续行动次数	DOT 或 HOT 数值	属性修正（JSON 对象：max_hp、attack、defense、speed）
+
+

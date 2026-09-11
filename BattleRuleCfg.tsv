@@ -1,0 +1,9 @@
+C_INT_id	C_LONG_atb_threshold	C_INT_max_actions	C_LONG_damage_variance_permille	C_LONG_crit_chance_permille	C_LONG_crit_multiplier_permille
+s	s	s	s	s	s
+int	long	int	long	long	long
+BattleType	ATBThreshold	MaxActions	DamageVariancePermille	CritChancePermille	CritMultiplierPermille
+id	atb_threshold	max_actions	damage_variance_permille	crit_chance_permille	crit_multiplier_permille
+					
+战斗类型	行动条阈值	最大行动次数	伤害浮动（千分比）	暴击概率（千分比）	暴击倍率（千分比）
+
+

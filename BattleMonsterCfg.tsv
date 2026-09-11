@@ -1,0 +1,9 @@
+C_INT_id	C_LONG_max_hp	C_LONG_attack	C_LONG_defense	C_LONG_speed	C_INT_basic_skill_id	C_ARR_active_skill_ids	C_ARR_initial_status_ids
+s	s	s	s	s	s	s	s
+int	long	long	long	long	int	int[]	int[]
+CfgID	MaxHP	Attack	Defense	Speed	BasicSkillID	ActiveSkillIDs	InitialStatusIDs
+id	max_hp	attack	defense	speed	basic_skill_id	active_skill_ids	initial_status_ids
+							
+怪物配置 ID	基础最大生命	基础攻击	基础防御	基础速度	普攻技能 ID	主动技能 ID	初始状态 ID
+
+

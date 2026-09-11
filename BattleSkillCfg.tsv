@@ -1,0 +1,9 @@
+C_INT_id	C_INT_cooldown	C_INT_target_rule	C_ARR_effects
+s	s	s	s
+int	int	int	BattleEffectCfg[]
+CfgID	Cooldown	TargetRule	Effects
+id	cooldown	target_rule	effects
+			BattleEffectCfg
+技能配置 ID	冷却行动次数	目标规则	顺序效果（JSON 数组：kind、coefficient_permille、flat、status_id）
+
+

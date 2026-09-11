@@ -1,0 +1,9 @@
+C_INT_id	C_ARR_members
+s	s
+int	BattleMonsterGroupMemberCfg[]
+CfgID	Members
+id	members
+	BattleMonsterGroupMemberCfg
+怪物组配置 ID	怪物成员（JSON 数组：monster_cfg_id、position）
+
+
