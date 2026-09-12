@@ -1,109 +1,109 @@
-C_INT_id	C_INT_cooldown	C_INT_target_rule	C_ARR_effects
-s	s	s	s
-int	int	int	TypIDVal[]
-CfgID	Cooldown	TargetRule	Effects
-id	cooldown	target_rule	effects
+C_INT_id	C_INT_cooldown	C_INT_target_rule	C_ARR_effects	C_INT_windup_ticks	C_INT_recovery_ticks
+s	s	s	s	s	s
+int	int	int	TypIDVal[]	int	int
+CfgID	Cooldown	TargetRule	Effects	WindupTicks	RecoveryTicks
+id	cooldown	target_rule	effects	windup_ticks	recovery_ticks
 			TypIDVal_P_cspb
-技能配置 ID	冷却行动次数	目标规则	effects (Typ=battle_damage/battle_heal/battle_status; ID=status ID; Val=flat; Pro=coefficient permille)
+技能配置 ID	冷却行动次数	目标规则	effects (Typ=battle_damage/battle_heal/battle_status; ID=status ID; Val=flat; Pro=coefficient permille)	前摇 tick 数	后摇 tick 数
 
 
-1	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":6,""pro"":900},{""typ"":""battle_status"",""id"":1,""val"":0,""pro"":0}]"
-2	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":7,""pro"":950},{""typ"":""battle_status"",""id"":2,""val"":0,""pro"":0}]"
-3	4	2	"[{""typ"":""battle_damage"",""id"":0,""val"":8,""pro"":1000},{""typ"":""battle_status"",""id"":3,""val"":0,""pro"":0}]"
-4	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":9,""pro"":1050},{""typ"":""battle_status"",""id"":4,""val"":0,""pro"":0}]"
-5	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":10,""pro"":1100},{""typ"":""battle_status"",""id"":5,""val"":0,""pro"":0}]"
-6	3	2	"[{""typ"":""battle_damage"",""id"":0,""val"":11,""pro"":850},{""typ"":""battle_status"",""id"":6,""val"":0,""pro"":0}]"
-7	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":12,""pro"":900},{""typ"":""battle_status"",""id"":7,""val"":0,""pro"":0}]"
-8	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":13,""pro"":950},{""typ"":""battle_status"",""id"":8,""val"":0,""pro"":0}]"
-9	2	2	"[{""typ"":""battle_damage"",""id"":0,""val"":14,""pro"":1000},{""typ"":""battle_status"",""id"":9,""val"":0,""pro"":0}]"
-10	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":15,""pro"":1050},{""typ"":""battle_status"",""id"":10,""val"":0,""pro"":0}]"
-11	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":16,""pro"":1100},{""typ"":""battle_status"",""id"":11,""val"":0,""pro"":0}]"
-12	1	2	"[{""typ"":""battle_damage"",""id"":0,""val"":17,""pro"":850},{""typ"":""battle_status"",""id"":12,""val"":0,""pro"":0}]"
-13	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":18,""pro"":900},{""typ"":""battle_status"",""id"":13,""val"":0,""pro"":0}]"
-14	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":19,""pro"":950},{""typ"":""battle_status"",""id"":14,""val"":0,""pro"":0}]"
-15	4	2	"[{""typ"":""battle_damage"",""id"":0,""val"":20,""pro"":1000},{""typ"":""battle_status"",""id"":15,""val"":0,""pro"":0}]"
-16	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":21,""pro"":1050},{""typ"":""battle_status"",""id"":16,""val"":0,""pro"":0}]"
-17	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":22,""pro"":1100},{""typ"":""battle_status"",""id"":17,""val"":0,""pro"":0}]"
-18	3	2	"[{""typ"":""battle_damage"",""id"":0,""val"":23,""pro"":850},{""typ"":""battle_status"",""id"":18,""val"":0,""pro"":0}]"
-19	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":24,""pro"":900},{""typ"":""battle_status"",""id"":19,""val"":0,""pro"":0}]"
-20	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":25,""pro"":950},{""typ"":""battle_status"",""id"":20,""val"":0,""pro"":0}]"
-21	2	2	"[{""typ"":""battle_damage"",""id"":0,""val"":26,""pro"":1000},{""typ"":""battle_status"",""id"":21,""val"":0,""pro"":0}]"
-22	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":27,""pro"":1050},{""typ"":""battle_status"",""id"":22,""val"":0,""pro"":0}]"
-23	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":28,""pro"":1100},{""typ"":""battle_status"",""id"":23,""val"":0,""pro"":0}]"
-24	1	2	"[{""typ"":""battle_damage"",""id"":0,""val"":29,""pro"":850},{""typ"":""battle_status"",""id"":24,""val"":0,""pro"":0}]"
-25	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":30,""pro"":900},{""typ"":""battle_status"",""id"":25,""val"":0,""pro"":0}]"
-26	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":31,""pro"":950},{""typ"":""battle_status"",""id"":26,""val"":0,""pro"":0}]"
-27	4	2	"[{""typ"":""battle_damage"",""id"":0,""val"":32,""pro"":1000},{""typ"":""battle_status"",""id"":27,""val"":0,""pro"":0}]"
-28	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":33,""pro"":1050},{""typ"":""battle_status"",""id"":28,""val"":0,""pro"":0}]"
-29	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":34,""pro"":1100},{""typ"":""battle_status"",""id"":29,""val"":0,""pro"":0}]"
-30	3	2	"[{""typ"":""battle_damage"",""id"":0,""val"":35,""pro"":850},{""typ"":""battle_status"",""id"":30,""val"":0,""pro"":0}]"
-31	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":36,""pro"":900},{""typ"":""battle_status"",""id"":31,""val"":0,""pro"":0}]"
-32	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":37,""pro"":950},{""typ"":""battle_status"",""id"":32,""val"":0,""pro"":0}]"
-33	2	2	"[{""typ"":""battle_damage"",""id"":0,""val"":38,""pro"":1000},{""typ"":""battle_status"",""id"":33,""val"":0,""pro"":0}]"
-34	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":39,""pro"":1050},{""typ"":""battle_status"",""id"":34,""val"":0,""pro"":0}]"
-35	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":40,""pro"":1100},{""typ"":""battle_status"",""id"":35,""val"":0,""pro"":0}]"
-36	1	2	"[{""typ"":""battle_damage"",""id"":0,""val"":41,""pro"":850},{""typ"":""battle_status"",""id"":36,""val"":0,""pro"":0}]"
-37	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":42,""pro"":900},{""typ"":""battle_status"",""id"":37,""val"":0,""pro"":0}]"
-38	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":43,""pro"":950},{""typ"":""battle_status"",""id"":38,""val"":0,""pro"":0}]"
-39	4	2	"[{""typ"":""battle_damage"",""id"":0,""val"":44,""pro"":1000},{""typ"":""battle_status"",""id"":39,""val"":0,""pro"":0}]"
-40	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":45,""pro"":1050},{""typ"":""battle_status"",""id"":40,""val"":0,""pro"":0}]"
-41	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":46,""pro"":1100},{""typ"":""battle_status"",""id"":41,""val"":0,""pro"":0}]"
-42	3	2	"[{""typ"":""battle_damage"",""id"":0,""val"":47,""pro"":850},{""typ"":""battle_status"",""id"":42,""val"":0,""pro"":0}]"
-43	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":48,""pro"":900},{""typ"":""battle_status"",""id"":43,""val"":0,""pro"":0}]"
-44	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":49,""pro"":950},{""typ"":""battle_status"",""id"":44,""val"":0,""pro"":0}]"
-45	2	2	"[{""typ"":""battle_damage"",""id"":0,""val"":50,""pro"":1000},{""typ"":""battle_status"",""id"":45,""val"":0,""pro"":0}]"
-46	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":51,""pro"":1050},{""typ"":""battle_status"",""id"":46,""val"":0,""pro"":0}]"
-47	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":52,""pro"":1100},{""typ"":""battle_status"",""id"":47,""val"":0,""pro"":0}]"
-48	1	2	"[{""typ"":""battle_damage"",""id"":0,""val"":53,""pro"":850},{""typ"":""battle_status"",""id"":48,""val"":0,""pro"":0}]"
-49	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":54,""pro"":900},{""typ"":""battle_status"",""id"":49,""val"":0,""pro"":0}]"
-50	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":55,""pro"":950},{""typ"":""battle_status"",""id"":50,""val"":0,""pro"":0}]"
-51	4	2	"[{""typ"":""battle_damage"",""id"":0,""val"":56,""pro"":1000},{""typ"":""battle_status"",""id"":51,""val"":0,""pro"":0}]"
-52	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":57,""pro"":1050},{""typ"":""battle_status"",""id"":52,""val"":0,""pro"":0}]"
-53	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":58,""pro"":1100},{""typ"":""battle_status"",""id"":53,""val"":0,""pro"":0}]"
-54	3	2	"[{""typ"":""battle_damage"",""id"":0,""val"":59,""pro"":850},{""typ"":""battle_status"",""id"":54,""val"":0,""pro"":0}]"
-55	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":60,""pro"":900},{""typ"":""battle_status"",""id"":55,""val"":0,""pro"":0}]"
-56	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":61,""pro"":950},{""typ"":""battle_status"",""id"":56,""val"":0,""pro"":0}]"
-57	2	2	"[{""typ"":""battle_damage"",""id"":0,""val"":62,""pro"":1000},{""typ"":""battle_status"",""id"":57,""val"":0,""pro"":0}]"
-58	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":63,""pro"":1050},{""typ"":""battle_status"",""id"":58,""val"":0,""pro"":0}]"
-59	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":64,""pro"":1100},{""typ"":""battle_status"",""id"":59,""val"":0,""pro"":0}]"
-60	1	2	"[{""typ"":""battle_damage"",""id"":0,""val"":65,""pro"":850},{""typ"":""battle_status"",""id"":60,""val"":0,""pro"":0}]"
-61	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":66,""pro"":900},{""typ"":""battle_status"",""id"":61,""val"":0,""pro"":0}]"
-62	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":67,""pro"":950},{""typ"":""battle_status"",""id"":62,""val"":0,""pro"":0}]"
-63	4	2	"[{""typ"":""battle_damage"",""id"":0,""val"":68,""pro"":1000},{""typ"":""battle_status"",""id"":63,""val"":0,""pro"":0}]"
-64	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":69,""pro"":1050},{""typ"":""battle_status"",""id"":64,""val"":0,""pro"":0}]"
-65	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":70,""pro"":1100},{""typ"":""battle_status"",""id"":65,""val"":0,""pro"":0}]"
-66	3	2	"[{""typ"":""battle_damage"",""id"":0,""val"":71,""pro"":850},{""typ"":""battle_status"",""id"":66,""val"":0,""pro"":0}]"
-67	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":72,""pro"":900},{""typ"":""battle_status"",""id"":67,""val"":0,""pro"":0}]"
-68	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":73,""pro"":950},{""typ"":""battle_status"",""id"":68,""val"":0,""pro"":0}]"
-69	2	2	"[{""typ"":""battle_damage"",""id"":0,""val"":74,""pro"":1000},{""typ"":""battle_status"",""id"":69,""val"":0,""pro"":0}]"
-70	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":75,""pro"":1050},{""typ"":""battle_status"",""id"":70,""val"":0,""pro"":0}]"
-71	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":76,""pro"":1100},{""typ"":""battle_status"",""id"":71,""val"":0,""pro"":0}]"
-72	1	2	"[{""typ"":""battle_damage"",""id"":0,""val"":77,""pro"":850},{""typ"":""battle_status"",""id"":72,""val"":0,""pro"":0}]"
-73	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":78,""pro"":900},{""typ"":""battle_status"",""id"":73,""val"":0,""pro"":0}]"
-74	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":79,""pro"":950},{""typ"":""battle_status"",""id"":74,""val"":0,""pro"":0}]"
-75	4	2	"[{""typ"":""battle_damage"",""id"":0,""val"":80,""pro"":1000},{""typ"":""battle_status"",""id"":75,""val"":0,""pro"":0}]"
-76	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":81,""pro"":1050},{""typ"":""battle_status"",""id"":76,""val"":0,""pro"":0}]"
-77	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":82,""pro"":1100},{""typ"":""battle_status"",""id"":77,""val"":0,""pro"":0}]"
-78	3	2	"[{""typ"":""battle_damage"",""id"":0,""val"":83,""pro"":850},{""typ"":""battle_status"",""id"":78,""val"":0,""pro"":0}]"
-79	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":84,""pro"":900},{""typ"":""battle_status"",""id"":79,""val"":0,""pro"":0}]"
-80	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":85,""pro"":950},{""typ"":""battle_status"",""id"":80,""val"":0,""pro"":0}]"
-81	2	2	"[{""typ"":""battle_damage"",""id"":0,""val"":86,""pro"":1000},{""typ"":""battle_status"",""id"":81,""val"":0,""pro"":0}]"
-82	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":87,""pro"":1050},{""typ"":""battle_status"",""id"":82,""val"":0,""pro"":0}]"
-83	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":88,""pro"":1100},{""typ"":""battle_status"",""id"":83,""val"":0,""pro"":0}]"
-84	1	2	"[{""typ"":""battle_damage"",""id"":0,""val"":89,""pro"":850},{""typ"":""battle_status"",""id"":84,""val"":0,""pro"":0}]"
-85	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":90,""pro"":900},{""typ"":""battle_status"",""id"":85,""val"":0,""pro"":0}]"
-86	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":91,""pro"":950},{""typ"":""battle_status"",""id"":86,""val"":0,""pro"":0}]"
-87	4	2	"[{""typ"":""battle_damage"",""id"":0,""val"":92,""pro"":1000},{""typ"":""battle_status"",""id"":87,""val"":0,""pro"":0}]"
-88	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":93,""pro"":1050},{""typ"":""battle_status"",""id"":88,""val"":0,""pro"":0}]"
-89	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":94,""pro"":1100},{""typ"":""battle_status"",""id"":89,""val"":0,""pro"":0}]"
-90	3	2	"[{""typ"":""battle_damage"",""id"":0,""val"":95,""pro"":850},{""typ"":""battle_status"",""id"":90,""val"":0,""pro"":0}]"
-91	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":96,""pro"":900},{""typ"":""battle_status"",""id"":91,""val"":0,""pro"":0}]"
-92	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":97,""pro"":950},{""typ"":""battle_status"",""id"":92,""val"":0,""pro"":0}]"
-93	2	2	"[{""typ"":""battle_damage"",""id"":0,""val"":98,""pro"":1000},{""typ"":""battle_status"",""id"":93,""val"":0,""pro"":0}]"
-94	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":99,""pro"":1050},{""typ"":""battle_status"",""id"":94,""val"":0,""pro"":0}]"
-95	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":100,""pro"":1100},{""typ"":""battle_status"",""id"":95,""val"":0,""pro"":0}]"
-96	1	2	"[{""typ"":""battle_damage"",""id"":0,""val"":101,""pro"":850},{""typ"":""battle_status"",""id"":96,""val"":0,""pro"":0}]"
-97	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":102,""pro"":900},{""typ"":""battle_status"",""id"":97,""val"":0,""pro"":0}]"
-98	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":103,""pro"":950},{""typ"":""battle_status"",""id"":98,""val"":0,""pro"":0}]"
-99	4	2	"[{""typ"":""battle_damage"",""id"":0,""val"":104,""pro"":1000},{""typ"":""battle_status"",""id"":99,""val"":0,""pro"":0}]"
-100	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":105,""pro"":1050},{""typ"":""battle_status"",""id"":100,""val"":0,""pro"":0}]"
+1	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":6,""pro"":900},{""typ"":""battle_status"",""id"":1,""val"":0,""pro"":0}]"	3	3
+2	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":7,""pro"":950},{""typ"":""battle_status"",""id"":2,""val"":0,""pro"":0}]"	3	3
+3	4	2	"[{""typ"":""battle_damage"",""id"":0,""val"":8,""pro"":1000},{""typ"":""battle_status"",""id"":3,""val"":0,""pro"":0}]"	3	3
+4	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":9,""pro"":1050},{""typ"":""battle_status"",""id"":4,""val"":0,""pro"":0}]"	3	3
+5	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":10,""pro"":1100},{""typ"":""battle_status"",""id"":5,""val"":0,""pro"":0}]"	3	3
+6	3	2	"[{""typ"":""battle_damage"",""id"":0,""val"":11,""pro"":850},{""typ"":""battle_status"",""id"":6,""val"":0,""pro"":0}]"	3	3
+7	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":12,""pro"":900},{""typ"":""battle_status"",""id"":7,""val"":0,""pro"":0}]"	3	3
+8	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":13,""pro"":950},{""typ"":""battle_status"",""id"":8,""val"":0,""pro"":0}]"	3	3
+9	2	2	"[{""typ"":""battle_damage"",""id"":0,""val"":14,""pro"":1000},{""typ"":""battle_status"",""id"":9,""val"":0,""pro"":0}]"	3	3
+10	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":15,""pro"":1050},{""typ"":""battle_status"",""id"":10,""val"":0,""pro"":0}]"	3	3
+11	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":16,""pro"":1100},{""typ"":""battle_status"",""id"":11,""val"":0,""pro"":0}]"	3	3
+12	1	2	"[{""typ"":""battle_damage"",""id"":0,""val"":17,""pro"":850},{""typ"":""battle_status"",""id"":12,""val"":0,""pro"":0}]"	3	3
+13	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":18,""pro"":900},{""typ"":""battle_status"",""id"":13,""val"":0,""pro"":0}]"	3	3
+14	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":19,""pro"":950},{""typ"":""battle_status"",""id"":14,""val"":0,""pro"":0}]"	3	3
+15	4	2	"[{""typ"":""battle_damage"",""id"":0,""val"":20,""pro"":1000},{""typ"":""battle_status"",""id"":15,""val"":0,""pro"":0}]"	3	3
+16	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":21,""pro"":1050},{""typ"":""battle_status"",""id"":16,""val"":0,""pro"":0}]"	3	3
+17	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":22,""pro"":1100},{""typ"":""battle_status"",""id"":17,""val"":0,""pro"":0}]"	3	3
+18	3	2	"[{""typ"":""battle_damage"",""id"":0,""val"":23,""pro"":850},{""typ"":""battle_status"",""id"":18,""val"":0,""pro"":0}]"	3	3
+19	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":24,""pro"":900},{""typ"":""battle_status"",""id"":19,""val"":0,""pro"":0}]"	3	3
+20	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":25,""pro"":950},{""typ"":""battle_status"",""id"":20,""val"":0,""pro"":0}]"	3	3
+21	2	2	"[{""typ"":""battle_damage"",""id"":0,""val"":26,""pro"":1000},{""typ"":""battle_status"",""id"":21,""val"":0,""pro"":0}]"	3	3
+22	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":27,""pro"":1050},{""typ"":""battle_status"",""id"":22,""val"":0,""pro"":0}]"	3	3
+23	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":28,""pro"":1100},{""typ"":""battle_status"",""id"":23,""val"":0,""pro"":0}]"	3	3
+24	1	2	"[{""typ"":""battle_damage"",""id"":0,""val"":29,""pro"":850},{""typ"":""battle_status"",""id"":24,""val"":0,""pro"":0}]"	3	3
+25	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":30,""pro"":900},{""typ"":""battle_status"",""id"":25,""val"":0,""pro"":0}]"	3	3
+26	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":31,""pro"":950},{""typ"":""battle_status"",""id"":26,""val"":0,""pro"":0}]"	3	3
+27	4	2	"[{""typ"":""battle_damage"",""id"":0,""val"":32,""pro"":1000},{""typ"":""battle_status"",""id"":27,""val"":0,""pro"":0}]"	3	3
+28	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":33,""pro"":1050},{""typ"":""battle_status"",""id"":28,""val"":0,""pro"":0}]"	3	3
+29	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":34,""pro"":1100},{""typ"":""battle_status"",""id"":29,""val"":0,""pro"":0}]"	3	3
+30	3	2	"[{""typ"":""battle_damage"",""id"":0,""val"":35,""pro"":850},{""typ"":""battle_status"",""id"":30,""val"":0,""pro"":0}]"	3	3
+31	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":36,""pro"":900},{""typ"":""battle_status"",""id"":31,""val"":0,""pro"":0}]"	3	3
+32	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":37,""pro"":950},{""typ"":""battle_status"",""id"":32,""val"":0,""pro"":0}]"	3	3
+33	2	2	"[{""typ"":""battle_damage"",""id"":0,""val"":38,""pro"":1000},{""typ"":""battle_status"",""id"":33,""val"":0,""pro"":0}]"	3	3
+34	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":39,""pro"":1050},{""typ"":""battle_status"",""id"":34,""val"":0,""pro"":0}]"	3	3
+35	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":40,""pro"":1100},{""typ"":""battle_status"",""id"":35,""val"":0,""pro"":0}]"	3	3
+36	1	2	"[{""typ"":""battle_damage"",""id"":0,""val"":41,""pro"":850},{""typ"":""battle_status"",""id"":36,""val"":0,""pro"":0}]"	3	3
+37	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":42,""pro"":900},{""typ"":""battle_status"",""id"":37,""val"":0,""pro"":0}]"	3	3
+38	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":43,""pro"":950},{""typ"":""battle_status"",""id"":38,""val"":0,""pro"":0}]"	3	3
+39	4	2	"[{""typ"":""battle_damage"",""id"":0,""val"":44,""pro"":1000},{""typ"":""battle_status"",""id"":39,""val"":0,""pro"":0}]"	3	3
+40	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":45,""pro"":1050},{""typ"":""battle_status"",""id"":40,""val"":0,""pro"":0}]"	3	3
+41	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":46,""pro"":1100},{""typ"":""battle_status"",""id"":41,""val"":0,""pro"":0}]"	3	3
+42	3	2	"[{""typ"":""battle_damage"",""id"":0,""val"":47,""pro"":850},{""typ"":""battle_status"",""id"":42,""val"":0,""pro"":0}]"	3	3
+43	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":48,""pro"":900},{""typ"":""battle_status"",""id"":43,""val"":0,""pro"":0}]"	3	3
+44	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":49,""pro"":950},{""typ"":""battle_status"",""id"":44,""val"":0,""pro"":0}]"	3	3
+45	2	2	"[{""typ"":""battle_damage"",""id"":0,""val"":50,""pro"":1000},{""typ"":""battle_status"",""id"":45,""val"":0,""pro"":0}]"	3	3
+46	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":51,""pro"":1050},{""typ"":""battle_status"",""id"":46,""val"":0,""pro"":0}]"	3	3
+47	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":52,""pro"":1100},{""typ"":""battle_status"",""id"":47,""val"":0,""pro"":0}]"	3	3
+48	1	2	"[{""typ"":""battle_damage"",""id"":0,""val"":53,""pro"":850},{""typ"":""battle_status"",""id"":48,""val"":0,""pro"":0}]"	3	3
+49	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":54,""pro"":900},{""typ"":""battle_status"",""id"":49,""val"":0,""pro"":0}]"	3	3
+50	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":55,""pro"":950},{""typ"":""battle_status"",""id"":50,""val"":0,""pro"":0}]"	3	3
+51	4	2	"[{""typ"":""battle_damage"",""id"":0,""val"":56,""pro"":1000},{""typ"":""battle_status"",""id"":51,""val"":0,""pro"":0}]"	3	3
+52	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":57,""pro"":1050},{""typ"":""battle_status"",""id"":52,""val"":0,""pro"":0}]"	3	3
+53	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":58,""pro"":1100},{""typ"":""battle_status"",""id"":53,""val"":0,""pro"":0}]"	3	3
+54	3	2	"[{""typ"":""battle_damage"",""id"":0,""val"":59,""pro"":850},{""typ"":""battle_status"",""id"":54,""val"":0,""pro"":0}]"	3	3
+55	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":60,""pro"":900},{""typ"":""battle_status"",""id"":55,""val"":0,""pro"":0}]"	3	3
+56	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":61,""pro"":950},{""typ"":""battle_status"",""id"":56,""val"":0,""pro"":0}]"	3	3
+57	2	2	"[{""typ"":""battle_damage"",""id"":0,""val"":62,""pro"":1000},{""typ"":""battle_status"",""id"":57,""val"":0,""pro"":0}]"	3	3
+58	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":63,""pro"":1050},{""typ"":""battle_status"",""id"":58,""val"":0,""pro"":0}]"	3	3
+59	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":64,""pro"":1100},{""typ"":""battle_status"",""id"":59,""val"":0,""pro"":0}]"	3	3
+60	1	2	"[{""typ"":""battle_damage"",""id"":0,""val"":65,""pro"":850},{""typ"":""battle_status"",""id"":60,""val"":0,""pro"":0}]"	3	3
+61	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":66,""pro"":900},{""typ"":""battle_status"",""id"":61,""val"":0,""pro"":0}]"	3	3
+62	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":67,""pro"":950},{""typ"":""battle_status"",""id"":62,""val"":0,""pro"":0}]"	3	3
+63	4	2	"[{""typ"":""battle_damage"",""id"":0,""val"":68,""pro"":1000},{""typ"":""battle_status"",""id"":63,""val"":0,""pro"":0}]"	3	3
+64	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":69,""pro"":1050},{""typ"":""battle_status"",""id"":64,""val"":0,""pro"":0}]"	3	3
+65	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":70,""pro"":1100},{""typ"":""battle_status"",""id"":65,""val"":0,""pro"":0}]"	3	3
+66	3	2	"[{""typ"":""battle_damage"",""id"":0,""val"":71,""pro"":850},{""typ"":""battle_status"",""id"":66,""val"":0,""pro"":0}]"	3	3
+67	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":72,""pro"":900},{""typ"":""battle_status"",""id"":67,""val"":0,""pro"":0}]"	3	3
+68	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":73,""pro"":950},{""typ"":""battle_status"",""id"":68,""val"":0,""pro"":0}]"	3	3
+69	2	2	"[{""typ"":""battle_damage"",""id"":0,""val"":74,""pro"":1000},{""typ"":""battle_status"",""id"":69,""val"":0,""pro"":0}]"	3	3
+70	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":75,""pro"":1050},{""typ"":""battle_status"",""id"":70,""val"":0,""pro"":0}]"	3	3
+71	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":76,""pro"":1100},{""typ"":""battle_status"",""id"":71,""val"":0,""pro"":0}]"	3	3
+72	1	2	"[{""typ"":""battle_damage"",""id"":0,""val"":77,""pro"":850},{""typ"":""battle_status"",""id"":72,""val"":0,""pro"":0}]"	3	3
+73	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":78,""pro"":900},{""typ"":""battle_status"",""id"":73,""val"":0,""pro"":0}]"	3	3
+74	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":79,""pro"":950},{""typ"":""battle_status"",""id"":74,""val"":0,""pro"":0}]"	3	3
+75	4	2	"[{""typ"":""battle_damage"",""id"":0,""val"":80,""pro"":1000},{""typ"":""battle_status"",""id"":75,""val"":0,""pro"":0}]"	3	3
+76	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":81,""pro"":1050},{""typ"":""battle_status"",""id"":76,""val"":0,""pro"":0}]"	3	3
+77	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":82,""pro"":1100},{""typ"":""battle_status"",""id"":77,""val"":0,""pro"":0}]"	3	3
+78	3	2	"[{""typ"":""battle_damage"",""id"":0,""val"":83,""pro"":850},{""typ"":""battle_status"",""id"":78,""val"":0,""pro"":0}]"	3	3
+79	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":84,""pro"":900},{""typ"":""battle_status"",""id"":79,""val"":0,""pro"":0}]"	3	3
+80	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":85,""pro"":950},{""typ"":""battle_status"",""id"":80,""val"":0,""pro"":0}]"	3	3
+81	2	2	"[{""typ"":""battle_damage"",""id"":0,""val"":86,""pro"":1000},{""typ"":""battle_status"",""id"":81,""val"":0,""pro"":0}]"	3	3
+82	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":87,""pro"":1050},{""typ"":""battle_status"",""id"":82,""val"":0,""pro"":0}]"	3	3
+83	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":88,""pro"":1100},{""typ"":""battle_status"",""id"":83,""val"":0,""pro"":0}]"	3	3
+84	1	2	"[{""typ"":""battle_damage"",""id"":0,""val"":89,""pro"":850},{""typ"":""battle_status"",""id"":84,""val"":0,""pro"":0}]"	3	3
+85	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":90,""pro"":900},{""typ"":""battle_status"",""id"":85,""val"":0,""pro"":0}]"	3	3
+86	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":91,""pro"":950},{""typ"":""battle_status"",""id"":86,""val"":0,""pro"":0}]"	3	3
+87	4	2	"[{""typ"":""battle_damage"",""id"":0,""val"":92,""pro"":1000},{""typ"":""battle_status"",""id"":87,""val"":0,""pro"":0}]"	3	3
+88	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":93,""pro"":1050},{""typ"":""battle_status"",""id"":88,""val"":0,""pro"":0}]"	3	3
+89	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":94,""pro"":1100},{""typ"":""battle_status"",""id"":89,""val"":0,""pro"":0}]"	3	3
+90	3	2	"[{""typ"":""battle_damage"",""id"":0,""val"":95,""pro"":850},{""typ"":""battle_status"",""id"":90,""val"":0,""pro"":0}]"	3	3
+91	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":96,""pro"":900},{""typ"":""battle_status"",""id"":91,""val"":0,""pro"":0}]"	3	3
+92	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":97,""pro"":950},{""typ"":""battle_status"",""id"":92,""val"":0,""pro"":0}]"	3	3
+93	2	2	"[{""typ"":""battle_damage"",""id"":0,""val"":98,""pro"":1000},{""typ"":""battle_status"",""id"":93,""val"":0,""pro"":0}]"	3	3
+94	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":99,""pro"":1050},{""typ"":""battle_status"",""id"":94,""val"":0,""pro"":0}]"	3	3
+95	4	1	"[{""typ"":""battle_damage"",""id"":0,""val"":100,""pro"":1100},{""typ"":""battle_status"",""id"":95,""val"":0,""pro"":0}]"	3	3
+96	1	2	"[{""typ"":""battle_damage"",""id"":0,""val"":101,""pro"":850},{""typ"":""battle_status"",""id"":96,""val"":0,""pro"":0}]"	3	3
+97	2	1	"[{""typ"":""battle_damage"",""id"":0,""val"":102,""pro"":900},{""typ"":""battle_status"",""id"":97,""val"":0,""pro"":0}]"	3	3
+98	3	1	"[{""typ"":""battle_damage"",""id"":0,""val"":103,""pro"":950},{""typ"":""battle_status"",""id"":98,""val"":0,""pro"":0}]"	3	3
+99	4	2	"[{""typ"":""battle_damage"",""id"":0,""val"":104,""pro"":1000},{""typ"":""battle_status"",""id"":99,""val"":0,""pro"":0}]"	3	3
+100	1	1	"[{""typ"":""battle_damage"",""id"":0,""val"":105,""pro"":1050},{""typ"":""battle_status"",""id"":100,""val"":0,""pro"":0}]"	3	3
