@@ -7,9 +7,9 @@ id	members
 怪物组配置 ID	monster members (Typ=battle_monster; ID=monster config ID; Val=position)
 
 
-1	"[{""typ"":""battle_monster"",""id"":1,""val"":1,""pro"":0},{""typ"":""battle_monster"",""id"":2,""val"":2,""pro"":0},{""typ"":""battle_monster"",""id"":3,""val"":3,""pro"":0}]"
-2	"[{""typ"":""battle_monster"",""id"":2,""val"":1,""pro"":0},{""typ"":""battle_monster"",""id"":3,""val"":2,""pro"":0},{""typ"":""battle_monster"",""id"":4,""val"":3,""pro"":0}]"
-3	"[{""typ"":""battle_monster"",""id"":3,""val"":1,""pro"":0},{""typ"":""battle_monster"",""id"":4,""val"":2,""pro"":0},{""typ"":""battle_monster"",""id"":5,""val"":3,""pro"":0}]"
+1	"[{""typ"":""battle_monster"",""id"":1,""val"":1,""pro"":0}]"
+2	"[{""typ"":""battle_monster"",""id"":2,""val"":1,""pro"":0},{""typ"":""battle_monster"",""id"":3,""val"":2,""pro"":0}]"
+3	"[{""typ"":""battle_monster"",""id"":3,""val"":1,""pro"":0},{""typ"":""battle_monster"",""id"":4,""val"":2,""pro"":0}]"
 4	"[{""typ"":""battle_monster"",""id"":4,""val"":1,""pro"":0},{""typ"":""battle_monster"",""id"":5,""val"":2,""pro"":0},{""typ"":""battle_monster"",""id"":6,""val"":3,""pro"":0}]"
 5	"[{""typ"":""battle_monster"",""id"":5,""val"":1,""pro"":0},{""typ"":""battle_monster"",""id"":6,""val"":2,""pro"":0},{""typ"":""battle_monster"",""id"":7,""val"":3,""pro"":0}]"
 6	"[{""typ"":""battle_monster"",""id"":6,""val"":1,""pro"":0},{""typ"":""battle_monster"",""id"":7,""val"":2,""pro"":0},{""typ"":""battle_monster"",""id"":8,""val"":3,""pro"":0}]"
