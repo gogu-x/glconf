@@ -89,7 +89,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     )
     parser.add_argument("mongo_uri")
     parser.add_argument("mongo_db")
-    parser.add_argument("config_path", nargs="?", type=Path, default=Path.cwd().parent)
+    parser.add_argument("config_path", nargs="?", type=Path, default=Path.cwd())
     return parser.parse_args(argv)
 
 
