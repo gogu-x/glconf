@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Import planner TSV/JSON records into MongoDB collections.
 
-Usage: import-conf.py <mongo_uri> <mongo_db> <config_path>
+Usage: import-conf.py <mongo_uri> <mongo_db> [config_path]
 """
 
 from __future__ import annotations
@@ -89,7 +89,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     )
     parser.add_argument("mongo_uri")
     parser.add_argument("mongo_db")
-    parser.add_argument("config_path", type=Path)
+    parser.add_argument("config_path", nargs="?", type=Path, default=Path.cwd().parent)
     return parser.parse_args(argv)
 
 
