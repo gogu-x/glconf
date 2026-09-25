@@ -1,0 +1,10 @@
+C_INT_id	C_INT_role_config_id	C_INT_level	C_INT_star	C_INT_breakthrough
+s	s	s	s	s
+int	int	int	int	int
+CfgID	RoleConfigID	Level	Star	Breakthrough
+id	role_config_id	level	star	breakthrough
+
+配置 ID	关联的角色战斗配置 ID	初始等级	初始星级	初始突破/境界等级
+
+
+1	1	1	1	0
