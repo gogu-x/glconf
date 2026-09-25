@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Import planner TSV/JSON records into MongoDB collections.
 
-Usage: import-conf.py <mongo_uri> <mongo_db> [config_path]
+Usage: import-conf.py --mongo-uri URI --mongo-db DB [--config-path DIR]
 """
 
 from __future__ import annotations
@@ -87,9 +87,9 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Import planner configuration records into MongoDB."
     )
-    parser.add_argument("mongo_uri")
-    parser.add_argument("mongo_db")
-    parser.add_argument("config_path", nargs="?", type=Path, default=Path.cwd())
+    parser.add_argument("--mongo-uri", required=True)
+    parser.add_argument("--mongo-db", required=True)
+    parser.add_argument("--config-path", type=Path, default=Path.cwd())
     return parser.parse_args(argv)
 
 
